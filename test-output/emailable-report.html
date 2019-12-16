@@ -1,0 +1,70 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset='utf-8'>
+<title>TestNG Report</title>
+<style type="text/css">
+table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}
+td,th {border:1px solid #009;padding:.25em .5em}
+.result th {vertical-align:bottom}
+.param th {padding-left:1em;padding-right:1em}
+.param td {padding-left:.5em;padding-right:2em}
+.stripe td,.stripe th {background-color: #E6EBF9}
+.numi,.numi_attn {text-align:right}
+.total td {font-weight:bold}
+.passedodd td {background-color: #0A0}
+.passedeven td {background-color: #3F3}
+.skippedodd td {background-color: #CCC}
+.skippedodd td {background-color: #DDD}
+.failedodd td,.numi_attn {background-color: #F33}
+.failedeven td,.stripe .numi_attn {background-color: #D00}
+.stacktrace {white-space:pre;font-family:monospace}
+.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}
+</style>
+</head>
+<body>
+<table cellspacing="0" cellpadding="0" class="testOverview">
+<tr><th>Test</th><th>Methods<br/>Passed</th><th>Scenarios<br/>Passed</th><th># skipped</th><th># failed</th><th>Total<br/>Time</th><th>Included<br/>Groups</th><th>Excluded<br/>Groups</th></tr>
+<tr><td style="text-align:left;padding-right:2em"><a href="#t1">Test case</a></td><td class="numi">3</td><td class="numi">3</td><td class="numi">0</td><td class="numi_attn">1</td><td class="numi">72.0 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+</table>
+<table cellspacing="0" cellpadding="0" class="methodOverview" id="summary">
+<tr><th>Class</th><th>Method</th><th># of<br/>Scenarios</th><th>Start</th><th>Time<br/>(ms)</th></tr>
+<tr id="t1"><th colspan="5">Test case &#8212; failed</th></tr>
+<tr class="failedodd"><td>PagesTest.HomeTest</td><td><a href="#m1"><b>dropdownTest</b>  </a></td><td class="numi">1</td><td>1576465838684</td><td class="numi">146</td></tr>
+<tr><th colspan="5">Test case &#8212; passed</th></tr>
+<tr class="passedodd"><td rowspan="3">PagesTest.HomeTest</td><td><a href="#m2"><b>clickonButtonTest</b>  </a></td><td class="numi">1</td><td>1576465804634</td><td class="numi">1660</td></tr><tr class="passedodd"><td><a href="#m3"><b>doallTest</b>  </a></td><td class="numi">1</td><td>1576465818787</td><td class="numi">3891</td></tr><tr class="passedodd"><td><a href="#m4"><b>searchboxTest</b>  </a></td><td class="numi">1</td><td>1576465854742</td><td class="numi">4542</td></tr>
+</table>
+<h1>Test case</h1>
+<h2 id="m1">PagesTest.HomeTest:dropdownTest</h2>
+<div>
+<div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#searchDropdownBox1&quot;}
+  (Session info: chrome=79.0.3945.79)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-AVA47U8&apos;, ip: &apos;172.20.1.174&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_211&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.79, chrome: {chromedriverVersion: 78.0.3904.105 (60e2d8774a81..., userDataDir: C:\Users\Sunzida\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:65444}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 05cebe922d2ba682bc8fd6c9b749bc4d
+*** Element info: {Using=id, value=searchDropdownBox1}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at Pages.Home.dropdown(Home.java:10)
+	at PagesTest.HomeTest.dropdownTest(HomeTest.java:14)
+... Removed 28 stack frames</div>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m2">PagesTest.HomeTest:doallTest</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m3">PagesTest.HomeTest:clickonButtonTest</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m4">PagesTest.HomeTest:searchboxTest</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+</body></html>
